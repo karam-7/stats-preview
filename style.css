@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;  
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: hsl(233, 47%, 7%);
+  
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: hsl(244, 38%, 16%);
+    text-align: center;
+    margin-top: 90px;
+    border-radius: 15px;
+    width: 70%;
+    margin-left: 18%;
+}
+
+.img-head{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 15px 15px 0px;
+    opacity: 0.3;
+}
+
+.main-img{
+    width: 50%;
+    height: auto;
+    border-radius: 0px 15px 15px 0px;
+    background-color: hsl(277, 64%, 61%);
+
+}
+
+.info{
+    margin-top: 50px ;
+    text-align: center;
+    padding-right: 80px;
+    width: 50%;
+}
+
+.info-h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    font-style:normal;
+    color: hsl(0, 0%, 100%);
+    margin-left: 20%;
+    font-family: 'Inter';
+    text-align: start;
+    margin-top: 30px;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+.info-para{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-left: 20%;
+    text-align: start;
+    margin-top: 30px;
+    width: 75%;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 80px;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+.stats-h2{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    font-style:normal;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+}
+
+.stats-info{
+    justify-content: center;
+    text-align: start;
+}
+
+.stats-para{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca';
+    margin-bottom: 50px;
+    margin: 10px;
+}
+
+.foot, .foot a{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: hsl(223, 47%, 23%);
+    margin: 45px auto;
+    justify-content: center;
+}
+
+.foot a{
+    color: hsl(245, 75%, 52%);
+}
+
+@media screen and (max-width: 1050px) {
+     .info-para{
+        width: 90%;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+    .info-h1, .stats{
+        margin-left: 20px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:950px){
+    .stats, .main{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .main-img, .info{
+        width: 100%;
+    }
+
+    .info{
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+
+    }
+
+    .info-h1, .info-para{
+        text-align: center;
+    }
+
+    .main-img{
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .img-head{
+        content: url(./images/image-header-mobile.jpg);
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+    }
+
+    .stats-info{
+        text-align: start;
+        justify-content: center;
+    }
+
+    .stats-h2, .stats-para{
+        text-align: center;
+        margin-left: 0px;
+    }
+}
